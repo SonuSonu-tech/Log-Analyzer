@@ -1,0 +1,15 @@
+2026-10-08 20:30:01 INFO  [com.app.WebServer] HTTP server started successfully on port 8080
+2026-10-08 20:30:15 INFO  [com.app.DbClient] Database connection established with primary cluster
+2026-10-08 20:31:02 DEBUG [com.app.AuthService] Cache hit for session token 'token_x89a23'
+2026-10-08 20:31:44 WARN  [com.app.AuthService] Failed login attempt for user 'admin' from IP 203.0.113.5
+2026-10-08 20:32:10 INFO  [com.app.OrderRouter] Order processed successfully: ID=ord_77192, total=$45.99
+2026-10-08 20:33:05 WARN  [com.app.PoolManager] Thread pool utilization reached 88% (44/50 active threads)
+2026-10-08 20:33:12 DEBUG [com.app.OrderRouter] Fetching shipping rates for postal code 90210
+2026-10-08 20:34:00 ERROR [com.app.PaymentGateway] Connection timeout (5000ms) while contacting Stripe API
+2026-10-08 20:34:01 INFO  [com.app.PaymentGateway] Retrying payment for order ord_77193 (Attempt 1 of 3)
+2026-10-08 20:34:05 INFO  [com.app.PaymentGateway] Payment authorized successfully: Transaction ID tx_99182
+2026-10-08 20:35:18 ERROR [com.app.InventoryAPI] Item SKU 'SHIRT-BLU-LG' not found in database lookup
+2026-10-08 20:36:22 DEBUG [com.app.SessionStore] Evicting 14 expired user sessions from memory
+2026-10-08 20:37:01 INFO  [com.app.BackupWorker] Daily scheduled database backup initiated
+2026-10-08 20:38:45 WARN  [com.app.MailerService] Email delivery delayed for user 'buyer@email.com' (SMTP 421)
+2026-10-08 20:39:10 INFO  [com.app.BackupWorker] Backup archive 'db_snap_20261008.tar.gz' uploaded to S3 bucket
